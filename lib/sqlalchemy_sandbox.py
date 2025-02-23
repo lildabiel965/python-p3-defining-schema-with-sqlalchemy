@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
-from sqlalchemy import Column, Integer, String, create_engine
-from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, create_engine # type: ignore
+from sqlalchemy.ext.declarative import declarative_base # type: ignore
 
 Base = declarative_base()
 
 class Student(Base):
-     __tablename__ = 'courses'
+     __tablename__ = 'students'
 
 id = Column(Integer(), primary_key=True)
 name = Column(String())
